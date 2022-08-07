@@ -4,24 +4,24 @@
   width: 400px;
   margin: auto;
   position: absolute;
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
 }
 
 #btn {
   margin: 15px 0;
-  position:relative;
-  top:40px;
+  position: relative;
+  top: 40px;
 }
 
-.txtfield{
-  background-color:white;
+.txtfield {
+  background-color: white;
   border-radius: 5px;
 }
 
-.text{
-  position:relative;
-  top:80px;
+.text {
+  position: relative;
+  top: 80px;
 }
