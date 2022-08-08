@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
-const login = () => {
+const Login = () => {
   return (
     <Grid>
       <Paper
@@ -58,4 +58,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
