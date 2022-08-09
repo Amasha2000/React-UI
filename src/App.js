@@ -1,6 +1,6 @@
 import './App.css';
 import Login from './components/login/Login.js';
-import FormInput from './components/customerForm/FormInput';
+import FormInput from './components/userRegistrationForm/FormInput';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -9,13 +9,7 @@ function App() {
     <div className="App">
       <Routes>
       <Route exact path='/' element={<Login/>} />
-      <Route path='/customer' element={
-           <form>
-           <FormInput placeholder='Username'/>
-           <FormInput placeholder='Email'/>
-           <FormInput placeholder='Password'/>
-         </form>
-        } />
+      <Route path='/customer' element={<FormInput/>} />
       </Routes>
     </div>
     </BrowserRouter>
