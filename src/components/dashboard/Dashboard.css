@@ -1,0 +1,31 @@
+html {
+  overflow-x: hidden;
+}
+
+.panel {
+  width: auto;
+  height: 10vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #5fa0de;
+  position: relative;
+  top: 20px;
+  display: flex;
+}
+
+.cardArea {
+  position: relative;
+  top: 90px;
+  left: 8%;
+}
+
+.card {
+  width: 50%;
+  height: 200px;
+}
+
+.topic,
+.count {
+  position: relative;
+  top: 40px;
+}
