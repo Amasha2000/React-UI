@@ -4,6 +4,8 @@ import FormInput from './components/userRegistrationForm/FormInput';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard';
 import Product from './components/product/Product';
+import Cart from './components/cart/Cart.js';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Route path='/customer' element={<FormInput/>} />
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/product' element={<Product/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </div>
     </BrowserRouter>

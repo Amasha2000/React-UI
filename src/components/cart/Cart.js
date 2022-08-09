@@ -6,13 +6,15 @@ import {
   FormControl,
   InputLabel,
   Grid,
+  Button,
   TextField,
   Typography,
-  Button,
-  TextareaAutosize,
 } from '@material-ui/core';
 
-const Product = () => {
+//import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+
+const Cart = () => {
   const [value, setValue] = useState('');
 
   const handleChange = (e) => setValue(e.target.value);
@@ -24,29 +26,39 @@ const Product = () => {
         className="title"
         style={{ fontWeight: 'bold', fontSize: '30px' }}
       >
-        Product Manage
+        Cart Manage
       </Typography>
       <div className="form" style={{ top: '100px' }}>
         <Grid container spacing={2}>
           <Grid item xs={6}>
-            <TextField
-              label="Title"
-              variant="outlined"
-              className="txtCustomer"
-              size="small"
-            />
+            <FormControl className="txtCustomer" size="small">
+              <InputLabel id="demo-select-small">User Name</InputLabel>
+              <Select
+                labelId="demo-select-small"
+                id="demo-select-small"
+                value={value}
+                label="Category"
+                onChange={handleChange}
+              >
+                <MenuItem value={'Amal'}>Amal</MenuItem>
+                <MenuItem value={'Kamal'}>Kamal</MenuItem>
+              </Select>
+            </FormControl>
           </Grid>
-          <Grid item xs={6}>
-            <TextField
-              label="Price"
-              variant="outlined"
-              className="txtCustomer"
-              size="small"
-            />
-          </Grid>
+          {/* <Grid item xs={6}>
+          <LocalizationProvider>
+          <DesktopDatePicker
+          label="Date desktop"
+          inputFormat="MM/dd/yyyy"
+          value={value}
+          onChange={handleChange}
+          renderInput={(params) => <TextField {...params} />}
+        />
+        </LocalizationProvider>
+        </Grid> */}
           <Grid item xs={6}>
             <FormControl className="txtCustomer" size="small">
-              <InputLabel id="demo-select-small">Category</InputLabel>
+              <InputLabel id="demo-select-small">Product Title</InputLabel>
               <Select
                 labelId="demo-select-small"
                 id="demo-select-small"
@@ -60,11 +72,11 @@ const Product = () => {
             </FormControl>
           </Grid>
           <Grid item xs={6}>
-            <TextareaAutosize
-              aria-label="empty textarea"
-              lassName="txtCustomer"
-              placeholder="Description"
-              style={{ height: 100, width: 630 }}
+            <TextField
+              label="Quantity"
+              variant="outlined"
+              className="txtCustomer"
+              size="small"
             />
           </Grid>
         </Grid>
@@ -89,4 +101,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Cart;

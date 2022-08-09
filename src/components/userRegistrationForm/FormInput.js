@@ -10,48 +10,48 @@ const FormInput = (props) => {
       <div className='form'>
       <Grid container spacing={2}>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="First Name" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Last Name" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Email" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="User Name" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Password" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="City" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Street" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Street No" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Zip Code" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Lat Value" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Long Value" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
         <Grid item xs={6} >
-        <TextField  label="Outlined" variant="outlined"  className='txtCustomer' size="small" />
+        <TextField  label="Mobile No" variant="outlined"  className='txtCustomer' size="small" />
         </Grid>
       </Grid>
       <Grid container className='btnArea'  direction="row" justifyContent="flex-end">
       <Grid item xs={1} >  
-      <Button variant="contained">Default</Button>
+      <Button variant="contained">Clear</Button>
       </Grid>
       <Grid item xs={1} >
-      <Button variant="contained" color="primary"> Primary</Button>
+      <Button variant="contained" color="primary">Save</Button>
       </Grid>
       </Grid>
    </div>
